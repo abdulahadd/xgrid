@@ -1,0 +1,83 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    background-color: #333; /* First shade of blackish-grey */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.guest-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #444; /* Second shade of blackish-grey */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    color: #fff; /* Set text color to white for better contrast */
+}
+
+input {
+    margin-bottom: 10px;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    grid-column: span 2;
+    align-self: center;
+}
+
+.guest {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+h2 {
+    color: #fff; /* Set heading text color to white for better contrast */
+    grid-column: span 2;
+    margin-bottom: 20px;
+}
